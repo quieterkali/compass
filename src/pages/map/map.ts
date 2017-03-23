@@ -9,21 +9,39 @@ import { NavController, Platform } from 'ionic-angular';
 })
 export class MapPage {
  
-  @ViewChild('map') mapElement: ElementRef;
-  @ViewChild('pleaseConnect') pleaseConnect: ElementRef;
+    @ViewChild('map') mapElement: ElementRef;
+    @ViewChild('pleaseConnect') pleaseConnect: ElementRef;
  
-  constructor(public navCtrl: NavController, public maps: GoogleMaps, public platform: Platform, public locations: Locations) {
+    constructor(public navCtrl: NavController, public maps: GoogleMaps, public platform: Platform, public locations: Locations) {
+        
+    }
  
-  }
+    ionViewDidLoad(){
+
+        //this.maps.evaluateDistance();
  
-  ionViewDidLoad(){
+        this.platform.ready().then(() => {
  
-    this.platform.ready().then(() => {
+            let mapLoaded = this.maps.init(this.mapElement.nativeElement, this.pleaseConnect.nativeElement);
+            let locationsLoaded = this.locations.load();
  
-        let mapLoaded = this.maps.init(this.mapElement.nativeElement, this.pleaseConnect.nativeElement);
+            Promise.all([
+                mapLoaded,
+                locationsLoaded
+            ]).then((result) => {
+
+                let locations = result[1];
+                //this.maps.evaluateDistance();
+                this.maps.addMarkersToMap(locations);
+
+                // for(let location of locations){
+                //     this.maps.addMarker(location.latitude, location.longitude);
+                // }
  
-    });
+            });
  
-  }
+        });
+ 
+    }
  
 }

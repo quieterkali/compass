@@ -1,0 +1,50 @@
+{
+    "locations": [
+ 
+        { 
+            "title": "Shopping Benfica",
+            "latitude": -3.738998,
+            "longitude": -38.540111
+        },
+        {
+            "title": "Paquero Quero",
+            "latitude": -3.739626,
+            "longitude": -38.540916
+        },
+        {
+            "title": "Plac Nord",
+            "latitude": -3.761043,
+            "longitude": -38.539620
+        },
+        {
+            "title": "Etufor",
+            "latitude": -3.770052,
+            "longitude": -38.542370
+        },
+        {
+            "title": "UFC",
+            "latitude": -3.741262,
+            "longitude": -38.539389
+        },
+        {
+            "title": "IFCE",
+            "latitude": -3.744260,
+            "longitude": -38.535825
+        },
+        {
+            "title": "Super Mercado Extra",
+            "latitude": -3.755883,
+            "longitude": -38.539338
+        },
+        {
+            "title": "23º Batalhão de Caçadores",
+            "latitude": -3.746939,
+            "longitude": -38.532642
+        },
+        {
+            "title": "Shopping Parangaba",
+            "latitude": -3.775916,
+            "longitude": -38.562151
+        }
+    ]
+}

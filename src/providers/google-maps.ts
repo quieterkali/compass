@@ -15,6 +15,9 @@ export class GoogleMaps {
   mapLoadedObserver: any;
   markers: any = [];
   apiKey: string = "AIzaSyA7grETiN_b4gVENDdoAa0b0QzNcogwmwM";
+  bounds: any;
+  service: any;
+  currentPosition: any;
  
   constructor(public connectivityService: Connectivity) {
  
@@ -85,16 +88,23 @@ export class GoogleMaps {
  
         // UNCOMMENT FOR NORMAL USE
         let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+        this.currentPosition = position;
  
         //let latLng = new google.maps.LatLng(40.713744, -74.009056);
  
         let mapOptions = {
           center: latLng,
           zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          disableDefaultUI: true
         }
  
         this.map = new google.maps.Map(this.mapElement, mapOptions);
+        let market = new google.maps.Marker({
+          position: latLng,
+          map: this.map
+        })
         resolve(true);
  
       });
@@ -105,7 +115,6 @@ export class GoogleMaps {
  
   disableMap(): void {
     if(this.pleaseConnect){
-      console.log("block");
       this.pleaseConnect.style.display = "block";
     }
  
@@ -151,18 +160,52 @@ export class GoogleMaps {
     }, false);
  
   }
+
+  addMarkersToMap(locations: any []){
+     this.bounds = new google.maps.LatLngBounds();
+     for(let location of locations){
+        this.addMarker(location);
+      }
+      this.map.fitBounds(this.bounds);
+  }
  
-  addMarker(lat: number, lng: number): void {
+  addMarker(location: any): void {
+
+    let antenaDescription = '<div>'+location.title+'</div>';
+
+    let infowindow = new google.maps.InfoWindow({
+      content: antenaDescription
+    });
  
-    let latLng = new google.maps.LatLng(lat, lng);
+    let latLng = new google.maps.LatLng(location.latitude, location.longitude);
  
     let marker = new google.maps.Marker({
       map: this.map,
       animation: google.maps.Animation.DROP,
-      position: latLng
+      position: latLng,
+      icon: '/assets/icon/anten2.png'
     });
- 
+
+    marker.addListener('click', function(){
+      infowindow.open(this.map, marker);
+    })
+
+    this.bounds.extend(latLng)
     this.markers.push(marker);  
- 
+  }
+
+  evaluateDistance(latLng: any){
+    this.service = new google.maps.DistanceMatrixService();
+    //let latLng = new google.maps.LatLng(this.currentPosition.coords.latitude, this.currentPosition.coords.longitude);
+    this.service.getDistanceMatrix({
+        origins: [latLng],
+        destinations: ['rio de janeiro'],
+        travelMode: google.maps.TravelMode.DRIVING,
+        unitSystem: google.maps.UnitSystem.METRIC}, 
+        callback);
+
+    function callback(response, status) {
+      console.log(response);
+    }
   }
 }

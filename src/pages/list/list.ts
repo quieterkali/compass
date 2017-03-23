@@ -1,22 +1,34 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { Geolocation } from 'ionic-native';
+import { Locations } from '../../providers/locations';
+import { AntenaDetailsPage } from '../antena-details/antena-details';
+import { GoogleMaps } from '../../providers/google-maps';
+declare const google;
 
-/*
-  Generated class for the List page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
 })
 export class ListPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
-
+ 
+  constructor(private navCtrl: NavController, private locations: Locations, private maps: GoogleMaps) {
+    console.log(this.locations.data);
+  }
+ 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListPage');
+    console.log('Hello ListPage Page');
+    this.getDistance();
   }
 
+  getDistance(){
+    Geolocation.getCurrentPosition().then((position) => {
+      let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      this.maps.evaluateDistance(latLng);
+    })
+  }
+
+  goToAntenaDetailsPage(location){
+    this.navCtrl.parent.parent.push(AntenaDetailsPage, {location: location});
+  }
 }

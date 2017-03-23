@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MapPage } from '../pages/map/map';
 import { ListPage } from '../pages/list/list';
+import { AntenaDetailsPage } from '../pages/antena-details/antena-details';
 import { Locations } from '../providers/locations';
 import { GoogleMaps } from '../providers/google-maps';
 import { Connectivity } from '../providers/connectivity';
@@ -13,7 +14,8 @@ import { Connectivity } from '../providers/connectivity';
     MyApp,
     HomePage,
     MapPage,
-    ListPage
+    ListPage,
+    AntenaDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +25,8 @@ import { Connectivity } from '../providers/connectivity';
     MyApp,
     HomePage,
     MapPage,
-    ListPage
+    ListPage,
+    AntenaDetailsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Locations, GoogleMaps, Connectivity]
 })
