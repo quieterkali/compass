@@ -1,0 +1,22 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>compass</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div #compass>
+    <img [style.transform]="getRotate()" #compass src="assets/image/compass.png" alt=""/>
+  </div>
+    <ion-list>
+      <ion-item>MagneticHeading: {{magneticHeading}}</ion-item>
+    </ion-list>
+    <button ion-button (click)="initCompass()">Start Compass</button>
+    <button ion-button (click)="stopCompass()">Stop compass</button>
+    <button ion-button (click)="lock()">Lock Screen</button>
+
+</ion-content>

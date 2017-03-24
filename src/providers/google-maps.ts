@@ -90,9 +90,13 @@ export class GoogleMaps {
         let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
         this.currentPosition = position;
+
+        this.bounds = new google.maps.LatLngBounds();
  
         //let latLng = new google.maps.LatLng(40.713744, -74.009056);
- 
+        
+        console.log(position);
+
         let mapOptions = {
           center: latLng,
           zoom: 15,
@@ -104,7 +108,12 @@ export class GoogleMaps {
         let market = new google.maps.Marker({
           position: latLng,
           map: this.map
-        })
+        });
+
+        this.bounds.extend(latLng)
+
+        this
+
         resolve(true);
  
       });
@@ -162,7 +171,7 @@ export class GoogleMaps {
   }
 
   addMarkersToMap(locations: any []){
-     this.bounds = new google.maps.LatLngBounds();
+     
      for(let location of locations){
         this.addMarker(location);
       }
@@ -183,14 +192,14 @@ export class GoogleMaps {
       map: this.map,
       animation: google.maps.Animation.DROP,
       position: latLng,
-      icon: '/assets/icon/anten2.png'
+      icon: 'assets/icon/anten2.png'
     });
 
     marker.addListener('click', function(){
       infowindow.open(this.map, marker);
     })
 
-    this.bounds.extend(latLng)
+    this.bounds.extend(latLng);
     this.markers.push(marker);  
   }
 
