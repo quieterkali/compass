@@ -105,9 +105,10 @@ export class GoogleMaps {
         }
  
         this.map = new google.maps.Map(this.mapElement, mapOptions);
-        let market = new google.maps.Marker({
+        new google.maps.Marker({
           position: latLng,
-          map: this.map
+          map: this.map,
+          icon: 'assets/icon/technician.png'
         });
 
         this.bounds.extend(latLng)
@@ -192,7 +193,7 @@ export class GoogleMaps {
       map: this.map,
       animation: google.maps.Animation.DROP,
       position: latLng,
-      icon: 'assets/icon/anten2.png'
+      icon: 'assets/icon/antena_green.png'
     });
 
     marker.addListener('click', function(){

@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { DeviceOrientation, DeviceOrientationCompassHeading, ScreenOrientation } from 'ionic-native';
+import { DeviceOrientation, DeviceOrientationCompassHeading } from 'ionic-native';
 import { NavController, NavParams } from 'ionic-angular';
 declare var window;
 
