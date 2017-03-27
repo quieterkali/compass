@@ -43,7 +43,7 @@ export class CompassPage {
 
   getRotate(){
     //this.lock();
-    return 'rotate('+this.magneticHeading+'deg)';
+    return 'rotate(-'+this.magneticHeading+'deg)';
   }
 
   lock(){

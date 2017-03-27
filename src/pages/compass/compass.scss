@@ -1,3 +1,18 @@
 page-compass {
 
+    #div1 {
+        background: red;
+        min-height: 200px;
+        position: relative;
+    }
+    #div2 {
+        background: blue;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
 }
