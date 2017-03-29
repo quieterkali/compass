@@ -14,6 +14,11 @@ page-compass {
         height: 300px;
     }
 
+    #compass {
+        -webkit-transition: transform 1s;
+        transition: transform 1s;
+    }
+
     #compass-arrow {
         position: absolute;
         background: url('../assets/image/compass-arrow.png') no-repeat center;
