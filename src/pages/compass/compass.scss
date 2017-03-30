@@ -12,11 +12,12 @@ page-compass {
         background-size: contain;
         width: 100%;
         height: 300px;
+        transition: transform .60s;
     }
 
     #compass {
-        -webkit-transition: transform 1s;
-        transition: transform 1s;
+        //-webkit-transition: transform 1s;
+        
     }
 
     #compass-arrow {

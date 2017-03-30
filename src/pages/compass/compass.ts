@@ -12,6 +12,7 @@ export class CompassPage {
   @ViewChild('compass') compass: ElementRef;
   subscription: any;
   magneticHeading: any;
+  currentHeading: any = 0;
 
   // animations: [
   //   trigger('rot', [
@@ -40,7 +41,7 @@ export class CompassPage {
       (error: any) => console.log(error)
     );
     // Watch the device compass heading change
-      this.subscription = DeviceOrientation.watchHeading({frequency:1000}).subscribe(
+      this.subscription = DeviceOrientation.watchHeading().subscribe(
       (data: DeviceOrientationCompassHeading) => {
         console.log(data, this.compass.nativeElement); 
         this.magneticHeading = data.magneticHeading;
@@ -52,7 +53,9 @@ export class CompassPage {
 
   getRotate(){
     //this.lock();
-    this.compass.nativeElement.style.transform = 'rotate(-'+this.magneticHeading+'deg)';
+    let rotateValue = this.magneticHeading + this.currentHeading;
+    this.compass.nativeElement.style.transform = 'rotate(-'+ rotateValue +'deg)';
+    this.currentHeading = this.magneticHeading;
   }
 
   // getRotate(){
