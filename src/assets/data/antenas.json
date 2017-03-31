@@ -1,0 +1,1618 @@
+{
+  "antenas": [
+    {
+      "id": 19629546,
+      "uf": "DF",
+      "estado": "Distrito Federal",
+      "municipio": "Campinas",
+      "bairro": "Rio de Janeiro",
+      "endereco": "Rua joeitobnrzh, 9570",
+      "latitude": 2557053,
+      "longitude": -49542679,
+      "emissora": [
+        {
+          "canal": 5,
+          "classe": "C",
+          "graus": 164,
+          "contorno": 47,
+          "consideracoes": "sit enim",
+          "nivel_sinal": 55,
+          "sinal": "bom"
+        },
+        {
+          "canal": 83,
+          "classe": "C",
+          "graus": 6,
+          "contorno": 63,
+          "consideracoes": "tempor nulla cillum",
+          "nivel_sinal": 65,
+          "sinal": "sem",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 92,
+          "classe": "A",
+          "graus": 239,
+          "contorno": 64,
+          "consideracoes": "ex cillum",
+          "nivel_sinal": 51,
+          "sinal": "bom"
+        },
+        {
+          "canal": 34,
+          "classe": "C",
+          "graus": 224,
+          "contorno": 50,
+          "consideracoes": "id culpa ut adipisic",
+          "nivel_sinal": 54,
+          "sinal": "bom",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 74,
+          "classe": "D",
+          "graus": 256,
+          "contorno": 40,
+          "consideracoes": "aliqua proident consequat",
+          "nivel_sinal": 62,
+          "sinal": "fraco",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 94,
+          "classe": "D",
+          "graus": 293,
+          "contorno": 68,
+          "consideracoes": "dolore",
+          "nivel_sinal": 53,
+          "sinal": "sem"
+        },
+        {
+          "canal": 9,
+          "classe": "A",
+          "graus": 317,
+          "contorno": 68,
+          "consideracoes": "esse eiusmod exercitation",
+          "nivel_sinal": 54,
+          "sinal": "sem"
+        },
+        {
+          "canal": 37,
+          "classe": "D",
+          "graus": 182,
+          "contorno": 52,
+          "consideracoes": "consectetur",
+          "nivel_sinal": 61,
+          "sinal": "bom",
+          "nome": "globo"
+        }
+      ]
+    },
+    {
+      "id": 58340667,
+      "uf": "GO",
+      "estado": "Minas Gerais",
+      "municipio": "Fortaleza",
+      "bairro": "Campinas",
+      "endereco": "Rua xtuomuwdmdkbjjdwvnrdr, 157",
+      "latitude": -82022209,
+      "longitude": -87457393,
+      "emissora": [
+        {
+          "canal": 1,
+          "classe": "D",
+          "graus": 166,
+          "contorno": 64,
+          "consideracoes": "dolore esse id enim",
+          "nivel_sinal": 57,
+          "sinal": "fraco",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 12,
+          "classe": "A",
+          "graus": 27,
+          "contorno": 52,
+          "consideracoes": "ut",
+          "nivel_sinal": 66,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 68,
+          "classe": "C",
+          "graus": 27,
+          "contorno": 53,
+          "consideracoes": "id dolore do",
+          "nivel_sinal": 58,
+          "sinal": "bom"
+        },
+        {
+          "canal": 47,
+          "classe": "B",
+          "graus": 110,
+          "contorno": 51,
+          "consideracoes": "aliqua",
+          "nivel_sinal": 55,
+          "sinal": "bom"
+        },
+        {
+          "canal": 69,
+          "classe": "A",
+          "graus": 196,
+          "contorno": 52,
+          "consideracoes": "reprehenderit cillum",
+          "nivel_sinal": 64,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 50,
+          "classe": "A",
+          "graus": 233,
+          "contorno": 69,
+          "consideracoes": "adipisicing",
+          "nivel_sinal": 65,
+          "sinal": "fraco",
+          "nome": "tv jangadeiro"
+        }
+      ]
+    },
+    {
+      "id": 49620368,
+      "uf": "SE",
+      "estado": "Espírito Santo",
+      "municipio": "Crateus",
+      "bairro": "Belo Horizonte",
+      "endereco": "Rua kwmssdfuww, 11",
+      "latitude": -95497476,
+      "longitude": -89914134,
+      "emissora": [
+        {
+          "canal": 22,
+          "classe": "E",
+          "graus": 218,
+          "contorno": 49,
+          "consideracoes": "anim veniam in ut ullamco",
+          "nivel_sinal": 65,
+          "sinal": "fraco",
+          "nome": "tv diario"
+        },
+        {
+          "canal": 9,
+          "classe": "D",
+          "graus": 43,
+          "contorno": 48,
+          "consideracoes": "dolore irure amet ut mollit",
+          "nivel_sinal": 60,
+          "sinal": "bom",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 54,
+          "classe": "B",
+          "graus": 117,
+          "contorno": 42,
+          "consideracoes": "cillum ",
+          "nivel_sinal": 53,
+          "sinal": "fraco",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 56,
+          "classe": "A",
+          "graus": 237,
+          "contorno": 59,
+          "consideracoes": "eiusmod minim cupidatat",
+          "nivel_sinal": 58,
+          "sinal": "bom"
+        },
+        {
+          "canal": 95,
+          "classe": "D",
+          "graus": 340,
+          "contorno": 40,
+          "consideracoes": "et officia in tempor",
+          "nivel_sinal": 62,
+          "sinal": "fraco",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 37,
+          "classe": "C",
+          "graus": 82,
+          "contorno": 55,
+          "consideracoes": "minim cupidatat",
+          "nivel_sinal": 54,
+          "sinal": "sem",
+          "nome": "globo"
+        },
+        {
+          "canal": 67,
+          "classe": "D",
+          "graus": 119,
+          "contorno": 59,
+          "consideracoes": "proident",
+          "nivel_sinal": 64,
+          "sinal": "bom",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 76,
+          "classe": "D",
+          "graus": 139,
+          "contorno": 70,
+          "consideracoes": "id sit elit officia",
+          "nivel_sinal": 61,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 10,
+          "classe": "D",
+          "graus": 85,
+          "contorno": 57,
+          "consideracoes": "Ut eu",
+          "nivel_sinal": 54,
+          "sinal": "fraco",
+          "nome": "band"
+        }
+      ]
+    },
+    {
+      "id": 2469416,
+      "uf": "RO",
+      "estado": "Mato Grosso",
+      "municipio": "Fortaleza",
+      "bairro": "Salvador",
+      "endereco": "Rua aqsmofum, 2",
+      "latitude": -79615279,
+      "longitude": 75922689,
+      "emissora": [
+        {
+          "canal": 38,
+          "classe": "C",
+          "graus": 246,
+          "contorno": 57,
+          "consideracoes": "irure exercitation tempor",
+          "nivel_sinal": 60,
+          "sinal": "fraco",
+          "nome": "tv diario"
+        },
+        {
+          "canal": 79,
+          "classe": "D",
+          "graus": 167,
+          "contorno": 65,
+          "consideracoes": "velit cillum Duis i",
+          "nivel_sinal": 50,
+          "sinal": "fraco",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 86,
+          "classe": "D",
+          "graus": 255,
+          "contorno": 47,
+          "consideracoes": "exercitation sint",
+          "nivel_sinal": 51,
+          "sinal": "sem",
+          "nome": "records"
+        },
+        {
+          "canal": 28,
+          "classe": "D",
+          "graus": 121,
+          "contorno": 63,
+          "consideracoes": "cillum labore ut dolor",
+          "nivel_sinal": 55,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 60,
+          "classe": "A",
+          "graus": 327,
+          "contorno": 51,
+          "consideracoes": "cupidatat enim cillu",
+          "nivel_sinal": 57,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 68,
+          "classe": "A",
+          "graus": 313,
+          "contorno": 52,
+          "consideracoes": "id tempor",
+          "nivel_sinal": 55,
+          "sinal": "bom"
+        },
+        {
+          "canal": 29,
+          "classe": "E",
+          "graus": 169,
+          "contorno": 59,
+          "consideracoes": "eu exercitation officia ni",
+          "nivel_sinal": 59,
+          "sinal": "sem",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 56,
+          "classe": "E",
+          "graus": 116,
+          "contorno": 53,
+          "consideracoes": "n",
+          "nivel_sinal": 57,
+          "sinal": "fraco",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 83,
+          "classe": "D",
+          "graus": 41,
+          "contorno": 43,
+          "consideracoes": "consectetur",
+          "nivel_sinal": 62,
+          "sinal": "fraco",
+          "nome": "tv jangadeiro"
+        }
+      ]
+    },
+    {
+      "id": 40044767,
+      "uf": "PR",
+      "estado": "Goiás",
+      "municipio": "Sao Paulo",
+      "bairro": "Belo Horizonte",
+      "endereco": "Rua uvcgcnopjcwlfkh, 3817",
+      "latitude": -14143116,
+      "longitude": 44101309,
+      "emissora": [
+        {
+          "canal": 15,
+          "classe": "E",
+          "graus": 16,
+          "contorno": 43,
+          "consideracoes": "minim",
+          "nivel_sinal": 63,
+          "sinal": "fraco",
+          "nome": "globo"
+        },
+        {
+          "canal": 11,
+          "classe": "B",
+          "graus": 360,
+          "contorno": 67,
+          "consideracoes": "laborum ut do consequat aliqua",
+          "nivel_sinal": 63,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 83,
+          "classe": "C",
+          "graus": 308,
+          "contorno": 47,
+          "consideracoes": "ea",
+          "nivel_sinal": 52,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 6,
+          "classe": "D",
+          "graus": 275,
+          "contorno": 59,
+          "consideracoes": "nisi Ut magna amet ullamco",
+          "nivel_sinal": 53,
+          "sinal": "bom",
+          "nome": "tv diario"
+        },
+        {
+          "canal": 0,
+          "classe": "D",
+          "graus": 267,
+          "contorno": 51,
+          "consideracoes": "in fugiat non r",
+          "nivel_sinal": 60,
+          "sinal": "sem"
+        },
+        {
+          "canal": 16,
+          "classe": "C",
+          "graus": 57,
+          "contorno": 61,
+          "consideracoes": "occaecat",
+          "nivel_sinal": 50,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 19,
+          "classe": "B",
+          "graus": 6,
+          "contorno": 52,
+          "consideracoes": "laboris nulla ex",
+          "nivel_sinal": 60,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 67,
+          "classe": "E",
+          "graus": 105,
+          "contorno": 43,
+          "consideracoes": "minim",
+          "nivel_sinal": 60,
+          "sinal": "sem"
+        }
+      ]
+    },
+    {
+      "id": 87175798,
+      "uf": "AC",
+      "estado": "Piauí",
+      "municipio": "Sao Paulo",
+      "bairro": "Belo Horizonte",
+      "endereco": "Rua bbqwmpcnpbajwiwtnkho, 504",
+      "latitude": 84659383,
+      "longitude": -85336214,
+      "emissora": [
+        {
+          "canal": 74,
+          "classe": "C",
+          "graus": 51,
+          "contorno": 67,
+          "consideracoes": "D",
+          "nivel_sinal": 50,
+          "sinal": "sem",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 73,
+          "classe": "A",
+          "graus": 321,
+          "contorno": 70,
+          "consideracoes": "dolor dolore",
+          "nivel_sinal": 50,
+          "sinal": "sem"
+        },
+        {
+          "canal": 20,
+          "classe": "A",
+          "graus": 319,
+          "contorno": 48,
+          "consideracoes": "id",
+          "nivel_sinal": 59,
+          "sinal": "sem"
+        },
+        {
+          "canal": 32,
+          "classe": "D",
+          "graus": 168,
+          "contorno": 54,
+          "consideracoes": "mollit ullamco",
+          "nivel_sinal": 51,
+          "sinal": "bom",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 43,
+          "classe": "E",
+          "graus": 36,
+          "contorno": 53,
+          "consideracoes": "ex dolore",
+          "nivel_sinal": 62,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 33,
+          "classe": "E",
+          "graus": 254,
+          "contorno": 40,
+          "consideracoes": "ad nostrud ut",
+          "nivel_sinal": 56,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 46,
+          "classe": "D",
+          "graus": 337,
+          "contorno": 40,
+          "consideracoes": "sed",
+          "nivel_sinal": 57,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 92,
+          "classe": "C",
+          "graus": 156,
+          "contorno": 55,
+          "consideracoes": "Lorem",
+          "nivel_sinal": 58,
+          "sinal": "fraco",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 36,
+          "classe": "B",
+          "graus": 22,
+          "contorno": 64,
+          "consideracoes": "incididunt in ullamco Excepteur",
+          "nivel_sinal": 63,
+          "sinal": "sem",
+          "nome": "tv verde mares"
+        }
+      ]
+    },
+    {
+      "id": 29338035,
+      "uf": "PA",
+      "estado": "Amazonas",
+      "municipio": "Rio de Janeiro",
+      "bairro": "Belo Horizonte",
+      "endereco": "Rua dtqj, 8441",
+      "latitude": -5248410,
+      "longitude": -45892638,
+      "emissora": [
+        {
+          "canal": 61,
+          "classe": "D",
+          "graus": 175,
+          "contorno": 58,
+          "consideracoes": "ut nulla laborum non",
+          "nivel_sinal": 51,
+          "sinal": "sem",
+          "nome": "records"
+        },
+        {
+          "canal": 71,
+          "classe": "D",
+          "graus": 66,
+          "contorno": 70,
+          "consideracoes": "labore id",
+          "nivel_sinal": 62,
+          "sinal": "sem"
+        },
+        {
+          "canal": 75,
+          "classe": "B",
+          "graus": 344,
+          "contorno": 68,
+          "consideracoes": "veniam ea",
+          "nivel_sinal": 55,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 57,
+          "classe": "C",
+          "graus": 321,
+          "contorno": 63,
+          "consideracoes": "exercitation officia",
+          "nivel_sinal": 55,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 98,
+          "classe": "D",
+          "graus": 319,
+          "contorno": 45,
+          "consideracoes": "Ut occaecat",
+          "nivel_sinal": 59,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 94,
+          "classe": "A",
+          "graus": 353,
+          "contorno": 65,
+          "consideracoes": "culpa",
+          "nivel_sinal": 65,
+          "sinal": "bom",
+          "nome": "records"
+        },
+        {
+          "canal": 41,
+          "classe": "A",
+          "graus": 187,
+          "contorno": 54,
+          "consideracoes": "irure adipisicing non aliqua",
+          "nivel_sinal": 58,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        }
+      ]
+    },
+    {
+      "id": 10793802,
+      "uf": "AM",
+      "estado": "Maranhão",
+      "municipio": "Salvador",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua lospzmmzhzmmrbcq, 364",
+      "latitude": -50236424,
+      "longitude": 24268458,
+      "emissora": [
+        {
+          "canal": 7,
+          "classe": "D",
+          "graus": 150,
+          "contorno": 65,
+          "consideracoes": "sunt",
+          "nivel_sinal": 52,
+          "sinal": "bom"
+        },
+        {
+          "canal": 45,
+          "classe": "E",
+          "graus": 228,
+          "contorno": 65,
+          "consideracoes": "do cillum ipsum",
+          "nivel_sinal": 50,
+          "sinal": "bom",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 19,
+          "classe": "C",
+          "graus": 263,
+          "contorno": 41,
+          "consideracoes": "qui nulla exercitati",
+          "nivel_sinal": 66,
+          "sinal": "bom",
+          "nome": "globo"
+        },
+        {
+          "canal": 29,
+          "classe": "E",
+          "graus": 288,
+          "contorno": 59,
+          "consideracoes": "tempor ad",
+          "nivel_sinal": 57,
+          "sinal": "sem"
+        },
+        {
+          "canal": 26,
+          "classe": "C",
+          "graus": 83,
+          "contorno": 48,
+          "consideracoes": "dolor ipsum temp",
+          "nivel_sinal": 50,
+          "sinal": "sem",
+          "nome": "band"
+        },
+        {
+          "canal": 4,
+          "classe": "D",
+          "graus": 52,
+          "contorno": 45,
+          "consideracoes": "eiusmod",
+          "nivel_sinal": 51,
+          "sinal": "bom",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 40,
+          "classe": "B",
+          "graus": 104,
+          "contorno": 52,
+          "consideracoes": "laboris par",
+          "nivel_sinal": 56,
+          "sinal": "sem"
+        },
+        {
+          "canal": 54,
+          "classe": "D",
+          "graus": 27,
+          "contorno": 40,
+          "consideracoes": "esse in anim laboris proident",
+          "nivel_sinal": 58,
+          "sinal": "sem",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 26,
+          "classe": "D",
+          "graus": 217,
+          "contorno": 42,
+          "consideracoes": "Excepteur pariatur Lorem",
+          "nivel_sinal": 52,
+          "sinal": "bom",
+          "nome": "tv jangadeiro"
+        }
+      ]
+    },
+    {
+      "id": 73827842,
+      "uf": "ES",
+      "estado": "Ceará",
+      "municipio": "Sao Paulo",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua vuwantqmgvyc, 516",
+      "latitude": 89679002,
+      "longitude": -89304362,
+      "emissora": [
+        {
+          "canal": 71,
+          "classe": "C",
+          "graus": 156,
+          "contorno": 45,
+          "consideracoes": "ullamco in laboris cupidatat",
+          "nivel_sinal": 55,
+          "sinal": "bom"
+        },
+        {
+          "canal": 57,
+          "classe": "E",
+          "graus": 32,
+          "contorno": 60,
+          "consideracoes": "labore",
+          "nivel_sinal": 56,
+          "sinal": "sem"
+        },
+        {
+          "canal": 23,
+          "classe": "C",
+          "graus": 38,
+          "contorno": 52,
+          "consideracoes": "in",
+          "nivel_sinal": 63,
+          "sinal": "sem",
+          "nome": "tv diario"
+        },
+        {
+          "canal": 68,
+          "classe": "C",
+          "graus": 156,
+          "contorno": 50,
+          "consideracoes": "ex",
+          "nivel_sinal": 63,
+          "sinal": "bom"
+        },
+        {
+          "canal": 82,
+          "classe": "C",
+          "graus": 131,
+          "contorno": 45,
+          "consideracoes": "irure",
+          "nivel_sinal": 55,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 72,
+          "classe": "D",
+          "graus": 344,
+          "contorno": 69,
+          "consideracoes": "in exercitation culpa proident",
+          "nivel_sinal": 51,
+          "sinal": "bom"
+        }
+      ]
+    },
+    {
+      "id": 28655497,
+      "uf": "RN",
+      "estado": "Maranhão",
+      "municipio": "Belo Horizonte",
+      "bairro": "Salvador",
+      "endereco": "Rua bbmyinqnrjtjtfbaqexj, 0",
+      "latitude": -47314766,
+      "longitude": -58468245,
+      "emissora": [
+        {
+          "canal": 56,
+          "classe": "C",
+          "graus": 352,
+          "contorno": 62,
+          "consideracoes": "dolore",
+          "nivel_sinal": 57,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 47,
+          "classe": "B",
+          "graus": 300,
+          "contorno": 58,
+          "consideracoes": "ex",
+          "nivel_sinal": 50,
+          "sinal": "sem"
+        },
+        {
+          "canal": 82,
+          "classe": "A",
+          "graus": 139,
+          "contorno": 68,
+          "consideracoes": "qui id",
+          "nivel_sinal": 61,
+          "sinal": "bom"
+        },
+        {
+          "canal": 42,
+          "classe": "C",
+          "graus": 256,
+          "contorno": 53,
+          "consideracoes": "in",
+          "nivel_sinal": 55,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 64,
+          "classe": "B",
+          "graus": 315,
+          "contorno": 43,
+          "consideracoes": "nisi",
+          "nivel_sinal": 59,
+          "sinal": "sem"
+        },
+        {
+          "canal": 86,
+          "classe": "D",
+          "graus": 197,
+          "contorno": 45,
+          "consideracoes": "incididunt",
+          "nivel_sinal": 66,
+          "sinal": "bom"
+        },
+        {
+          "canal": 92,
+          "classe": "A",
+          "graus": 192,
+          "contorno": 48,
+          "consideracoes": "Ut dolore",
+          "nivel_sinal": 56,
+          "sinal": "bom",
+          "nome": "band"
+        },
+        {
+          "canal": 91,
+          "classe": "D",
+          "graus": 105,
+          "contorno": 55,
+          "consideracoes": "cupidatat consequat voluptate laboris",
+          "nivel_sinal": 62,
+          "sinal": "sem",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 26,
+          "classe": "C",
+          "graus": 4,
+          "contorno": 63,
+          "consideracoes": "aliqua labore",
+          "nivel_sinal": 60,
+          "sinal": "bom",
+          "nome": "band"
+        },
+        {
+          "canal": 91,
+          "classe": "C",
+          "graus": 276,
+          "contorno": 48,
+          "consideracoes": "enim non incididunt nisi",
+          "nivel_sinal": 59,
+          "sinal": "sem",
+          "nome": "band"
+        }
+      ]
+    },
+    {
+      "id": 43530343,
+      "uf": "MT",
+      "estado": "Sergipe",
+      "municipio": "Campinas",
+      "bairro": "Campinas",
+      "endereco": "Rua lsngcf, 316",
+      "latitude": 63180132,
+      "longitude": 51334406,
+      "emissora": [
+        {
+          "canal": 5,
+          "classe": "E",
+          "graus": 299,
+          "contorno": 68,
+          "consideracoes": "id ex",
+          "nivel_sinal": 57,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 78,
+          "classe": "A",
+          "graus": 293,
+          "contorno": 63,
+          "consideracoes": "in officia quis",
+          "nivel_sinal": 64,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 8,
+          "classe": "D",
+          "graus": 271,
+          "contorno": 44,
+          "consideracoes": "elit dolore labore",
+          "nivel_sinal": 57,
+          "sinal": "fraco",
+          "nome": "tv camara"
+        },
+        {
+          "canal": 31,
+          "classe": "D",
+          "graus": 226,
+          "contorno": 69,
+          "consideracoes": "adipisicing in",
+          "nivel_sinal": 57,
+          "sinal": "fraco",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 80,
+          "classe": "D",
+          "graus": 296,
+          "contorno": 48,
+          "consideracoes": "Duis",
+          "nivel_sinal": 66,
+          "sinal": "bom",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 83,
+          "classe": "A",
+          "graus": 92,
+          "contorno": 69,
+          "consideracoes": "quis in deserunt ullamco sit",
+          "nivel_sinal": 52,
+          "sinal": "sem",
+          "nome": "globo"
+        }
+      ]
+    },
+    {
+      "id": 1722281,
+      "uf": "TO",
+      "estado": "Roraima",
+      "municipio": "Sao Paulo",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua egngwtkhwlbdrstdwmkwxlhrqxk, 2900",
+      "latitude": 35859546,
+      "longitude": -31410997,
+      "emissora": [
+        {
+          "canal": 57,
+          "classe": "C",
+          "graus": 190,
+          "contorno": 60,
+          "consideracoes": "et",
+          "nivel_sinal": 59,
+          "sinal": "sem"
+        },
+        {
+          "canal": 16,
+          "classe": "A",
+          "graus": 30,
+          "contorno": 48,
+          "consideracoes": "cillum sit mollit i",
+          "nivel_sinal": 60,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 18,
+          "classe": "B",
+          "graus": 190,
+          "contorno": 55,
+          "consideracoes": "enim",
+          "nivel_sinal": 66,
+          "sinal": "fraco",
+          "nome": "band"
+        },
+        {
+          "canal": 36,
+          "classe": "B",
+          "graus": 199,
+          "contorno": 59,
+          "consideracoes": "est Excepteur",
+          "nivel_sinal": 57,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 69,
+          "classe": "C",
+          "graus": 212,
+          "contorno": 67,
+          "consideracoes": "reprehenderit occaecat ex nulla",
+          "nivel_sinal": 65,
+          "sinal": "sem",
+          "nome": "records"
+        }
+      ]
+    },
+    {
+      "id": 41847110,
+      "uf": "SE",
+      "estado": "Rio Grande do Sul",
+      "municipio": "Rio de Janeiro",
+      "bairro": "Crateus",
+      "endereco": "Rua fmfzmlshfcfysimqlodhekyh, 5",
+      "latitude": -14300499,
+      "longitude": -92364670,
+      "emissora": [
+        {
+          "canal": 73,
+          "classe": "E",
+          "graus": 325,
+          "contorno": 43,
+          "consideracoes": "pariatur dolor aliquip",
+          "nivel_sinal": 61,
+          "sinal": "bom",
+          "nome": "records"
+        },
+        {
+          "canal": 25,
+          "classe": "D",
+          "graus": 275,
+          "contorno": 61,
+          "consideracoes": "ipsum labore",
+          "nivel_sinal": 53,
+          "sinal": "fraco",
+          "nome": "globo"
+        },
+        {
+          "canal": 65,
+          "classe": "D",
+          "graus": 289,
+          "contorno": 70,
+          "consideracoes": "laborum adipisic",
+          "nivel_sinal": 64,
+          "sinal": "bom",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 83,
+          "classe": "E",
+          "graus": 347,
+          "contorno": 64,
+          "consideracoes": "nulla esse sit Excep",
+          "nivel_sinal": 64,
+          "sinal": "bom",
+          "nome": "tv diario"
+        },
+        {
+          "canal": 82,
+          "classe": "B",
+          "graus": 233,
+          "contorno": 61,
+          "consideracoes": "officia qui consequat Duis",
+          "nivel_sinal": 58,
+          "sinal": "sem"
+        },
+        {
+          "canal": 6,
+          "classe": "E",
+          "graus": 116,
+          "contorno": 40,
+          "consideracoes": "proident exercitation Ut cupidatat Excepteur",
+          "nivel_sinal": 52,
+          "sinal": "sem",
+          "nome": "tv camara"
+        }
+      ]
+    },
+    {
+      "id": 29010867,
+      "uf": "PI",
+      "estado": "Maranhão",
+      "municipio": "Sao Paulo",
+      "bairro": "Salvador",
+      "endereco": "Rua vlzudcevjzifohlvgnoy, 5",
+      "latitude": 98653289,
+      "longitude": -60472662,
+      "emissora": [
+        {
+          "canal": 8,
+          "classe": "A",
+          "graus": 145,
+          "contorno": 45,
+          "consideracoes": "sed amet cupidata",
+          "nivel_sinal": 54,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 12,
+          "classe": "C",
+          "graus": 1,
+          "contorno": 41,
+          "consideracoes": "laborum reprehenderit",
+          "nivel_sinal": 53,
+          "sinal": "sem",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 42,
+          "classe": "D",
+          "graus": 275,
+          "contorno": 50,
+          "consideracoes": "mollit dolore",
+          "nivel_sinal": 59,
+          "sinal": "bom",
+          "nome": "globo"
+        },
+        {
+          "canal": 59,
+          "classe": "E",
+          "graus": 194,
+          "contorno": 62,
+          "consideracoes": "officia",
+          "nivel_sinal": 54,
+          "sinal": "sem"
+        },
+        {
+          "canal": 10,
+          "classe": "E",
+          "graus": 142,
+          "contorno": 62,
+          "consideracoes": "et culpa amet dolore eu",
+          "nivel_sinal": 55,
+          "sinal": "sem",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 94,
+          "classe": "D",
+          "graus": 247,
+          "contorno": 57,
+          "consideracoes": "dolore tempor in nisi",
+          "nivel_sinal": 60,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 56,
+          "classe": "D",
+          "graus": 192,
+          "contorno": 44,
+          "consideracoes": "exercitation cul",
+          "nivel_sinal": 63,
+          "sinal": "bom"
+        }
+      ]
+    },
+    {
+      "id": 90555167,
+      "uf": "PE",
+      "estado": "Minas Gerais",
+      "municipio": "Belo Horizonte",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua cffhtjaresecgurgcikbrmk, 18",
+      "latitude": 15505174,
+      "longitude": 7943557,
+      "emissora": [
+        {
+          "canal": 79,
+          "classe": "B",
+          "graus": 68,
+          "contorno": 60,
+          "consideracoes": "esse do ea pariatur ipsum",
+          "nivel_sinal": 64,
+          "sinal": "sem",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 90,
+          "classe": "A",
+          "graus": 276,
+          "contorno": 56,
+          "consideracoes": "deserunt consect",
+          "nivel_sinal": 66,
+          "sinal": "sem"
+        },
+        {
+          "canal": 47,
+          "classe": "B",
+          "graus": 308,
+          "contorno": 48,
+          "consideracoes": "voluptate exercitation",
+          "nivel_sinal": 64,
+          "sinal": "fraco",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 17,
+          "classe": "D",
+          "graus": 175,
+          "contorno": 42,
+          "consideracoes": "amet cupidatat in",
+          "nivel_sinal": 65,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 47,
+          "classe": "A",
+          "graus": 261,
+          "contorno": 52,
+          "consideracoes": "in culpa laboris do",
+          "nivel_sinal": 57,
+          "sinal": "bom",
+          "nome": "globo"
+        },
+        {
+          "canal": 79,
+          "classe": "A",
+          "graus": 12,
+          "contorno": 52,
+          "consideracoes": "nostrud",
+          "nivel_sinal": 51,
+          "sinal": "fraco",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 37,
+          "classe": "C",
+          "graus": 44,
+          "contorno": 45,
+          "consideracoes": "dolore",
+          "nivel_sinal": 57,
+          "sinal": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 69203433,
+      "uf": "RO",
+      "estado": "Mato Grosso do Sul",
+      "municipio": "Campinas",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua gnwtgdbfltelz, 9023",
+      "latitude": 36671854,
+      "longitude": -19153738,
+      "emissora": [
+        {
+          "canal": 10,
+          "classe": "E",
+          "graus": 344,
+          "contorno": 44,
+          "consideracoes": "vol",
+          "nivel_sinal": 63,
+          "sinal": "sem",
+          "nome": "globo"
+        },
+        {
+          "canal": 91,
+          "classe": "B",
+          "graus": 139,
+          "contorno": 67,
+          "consideracoes": "eu",
+          "nivel_sinal": 54,
+          "sinal": "sem"
+        },
+        {
+          "canal": 3,
+          "classe": "B",
+          "graus": 233,
+          "contorno": 56,
+          "consideracoes": "aute labore pariatur eiusmod",
+          "nivel_sinal": 61,
+          "sinal": "bom",
+          "nome": "globo"
+        },
+        {
+          "canal": 47,
+          "classe": "E",
+          "graus": 115,
+          "contorno": 68,
+          "consideracoes": "officia",
+          "nivel_sinal": 62,
+          "sinal": "bom"
+        },
+        {
+          "canal": 79,
+          "classe": "C",
+          "graus": 343,
+          "contorno": 70,
+          "consideracoes": "in ex",
+          "nivel_sinal": 50,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 2,
+          "classe": "A",
+          "graus": 205,
+          "contorno": 44,
+          "consideracoes": "in sit et d",
+          "nivel_sinal": 59,
+          "sinal": "fraco",
+          "nome": "tv camara"
+        }
+      ]
+    },
+    {
+      "id": 48669559,
+      "uf": "RJ",
+      "estado": "Rio Grande do Sul",
+      "municipio": "Sao Paulo",
+      "bairro": "Salvador",
+      "endereco": "Rua yulehyjg, 1",
+      "latitude": -21377533,
+      "longitude": 18500860,
+      "emissora": [
+        {
+          "canal": 39,
+          "classe": "A",
+          "graus": 1,
+          "contorno": 60,
+          "consideracoes": "Duis laboris minim proident dolore",
+          "nivel_sinal": 53,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 25,
+          "classe": "E",
+          "graus": 166,
+          "contorno": 52,
+          "consideracoes": "sint ut",
+          "nivel_sinal": 59,
+          "sinal": "fraco",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 43,
+          "classe": "B",
+          "graus": 213,
+          "contorno": 68,
+          "consideracoes": "aliquip est do",
+          "nivel_sinal": 51,
+          "sinal": "fraco",
+          "nome": "globo"
+        },
+        {
+          "canal": 2,
+          "classe": "E",
+          "graus": 204,
+          "contorno": 54,
+          "consideracoes": "ut in",
+          "nivel_sinal": 55,
+          "sinal": "fraco",
+          "nome": "tv verde mares"
+        },
+        {
+          "canal": 85,
+          "classe": "A",
+          "graus": 140,
+          "contorno": 52,
+          "consideracoes": "dolor",
+          "nivel_sinal": 62,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 8,
+          "classe": "E",
+          "graus": 63,
+          "contorno": 48,
+          "consideracoes": "nulla voluptate labore",
+          "nivel_sinal": 56,
+          "sinal": "sem",
+          "nome": "tv sao paulo"
+        }
+      ]
+    },
+    {
+      "id": 3109752,
+      "uf": "SC",
+      "estado": "Distrito Federal",
+      "municipio": "Salvador",
+      "bairro": "Crateus",
+      "endereco": "Rua gjfmmyhqwtatrakwizrizwyfbdazob, 983",
+      "latitude": -92324774,
+      "longitude": -8149229,
+      "emissora": [
+        {
+          "canal": 96,
+          "classe": "A",
+          "graus": 265,
+          "contorno": 70,
+          "consideracoes": "proident do ipsum",
+          "nivel_sinal": 61,
+          "sinal": "sem",
+          "nome": "band"
+        },
+        {
+          "canal": 39,
+          "classe": "C",
+          "graus": 37,
+          "contorno": 50,
+          "consideracoes": "",
+          "nivel_sinal": 54,
+          "sinal": "bom",
+          "nome": "globo"
+        },
+        {
+          "canal": 49,
+          "classe": "A",
+          "graus": 124,
+          "contorno": 51,
+          "consideracoes": "",
+          "nivel_sinal": 57,
+          "sinal": "sem",
+          "nome": "tv jangadeiro"
+        },
+        {
+          "canal": 66,
+          "classe": "E",
+          "graus": 355,
+          "contorno": 47,
+          "consideracoes": "Lorem est a",
+          "nivel_sinal": 56,
+          "sinal": "bom",
+          "nome": "band"
+        },
+        {
+          "canal": 41,
+          "classe": "B",
+          "graus": 142,
+          "contorno": 63,
+          "consideracoes": "est",
+          "nivel_sinal": 59,
+          "sinal": "fraco",
+          "nome": "tv sao paulo"
+        }
+      ]
+    },
+    {
+      "id": 56715385,
+      "uf": "RO",
+      "estado": "São Paulo",
+      "municipio": "Fortaleza",
+      "bairro": "Campinas",
+      "endereco": "Rua bjosswa, 8",
+      "latitude": 904362,
+      "longitude": 71582196,
+      "emissora": [
+        {
+          "canal": 24,
+          "classe": "E",
+          "graus": 57,
+          "contorno": 63,
+          "consideracoes": "cillum eu in cupidatat laborum",
+          "nivel_sinal": 59,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 48,
+          "classe": "B",
+          "graus": 326,
+          "contorno": 69,
+          "consideracoes": "cupidatat ut",
+          "nivel_sinal": 63,
+          "sinal": "bom",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 72,
+          "classe": "A",
+          "graus": 14,
+          "contorno": 65,
+          "consideracoes": "in nostrud enim ad sint",
+          "nivel_sinal": 57,
+          "sinal": "sem"
+        },
+        {
+          "canal": 47,
+          "classe": "B",
+          "graus": 233,
+          "contorno": 46,
+          "consideracoes": "labore dolore ut",
+          "nivel_sinal": 54,
+          "sinal": "sem",
+          "nome": "band"
+        },
+        {
+          "canal": 64,
+          "classe": "A",
+          "graus": 40,
+          "contorno": 67,
+          "consideracoes": "labore officia",
+          "nivel_sinal": 55,
+          "sinal": "bom"
+        },
+        {
+          "canal": 75,
+          "classe": "D",
+          "graus": 119,
+          "contorno": 60,
+          "consideracoes": "non sed dolor",
+          "nivel_sinal": 59,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 85,
+          "classe": "D",
+          "graus": 49,
+          "contorno": 44,
+          "consideracoes": "ea dolor dolore ad",
+          "nivel_sinal": 62,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 45,
+          "classe": "A",
+          "graus": 93,
+          "contorno": 54,
+          "consideracoes": "ullamco",
+          "nivel_sinal": 53,
+          "sinal": "sem"
+        },
+        {
+          "canal": 8,
+          "classe": "B",
+          "graus": 215,
+          "contorno": 56,
+          "consideracoes": "laboris voluptate",
+          "nivel_sinal": 50,
+          "sinal": "fraco"
+        }
+      ]
+    },
+    {
+      "id": 88858176,
+      "uf": "TO",
+      "estado": "Maranhão",
+      "municipio": "Fortaleza",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua qwtbdiuyyvuqstjnsswnetuiqbao, 63",
+      "latitude": -69836761,
+      "longitude": 43341665,
+      "emissora": [
+        {
+          "canal": 50,
+          "classe": "E",
+          "graus": 16,
+          "contorno": 63,
+          "consideracoes": "eiusmod proident non consectetur Excepteur",
+          "nivel_sinal": 62,
+          "sinal": "fraco",
+          "nome": "tv sao paulo"
+        },
+        {
+          "canal": 63,
+          "classe": "C",
+          "graus": 280,
+          "contorno": 56,
+          "consideracoes": "ex incididunt",
+          "nivel_sinal": 64,
+          "sinal": "bom",
+          "nome": "records"
+        },
+        {
+          "canal": 41,
+          "classe": "E",
+          "graus": 309,
+          "contorno": 49,
+          "consideracoes": "voluptate ex",
+          "nivel_sinal": 53,
+          "sinal": "sem"
+        },
+        {
+          "canal": 63,
+          "classe": "B",
+          "graus": 211,
+          "contorno": 41,
+          "consideracoes": "Duis in occaecat dolor",
+          "nivel_sinal": 51,
+          "sinal": "fraco"
+        },
+        {
+          "canal": 37,
+          "classe": "B",
+          "graus": 146,
+          "contorno": 51,
+          "consideracoes": "tempor dolor",
+          "nivel_sinal": 53,
+          "sinal": "sem",
+          "nome": "tv diario"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "properties": {
+    "antenas": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "unique": true,
+            "minimum": 1
+          },
+          "uf": {
+            "enum": ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"]
+          },
+          "estado": {
+            "enum": ["Acre", "Alagoas", "Amazonas", "Amapá", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", "Minas Gerais", "Mato Grosso do Sul", "Mato Grosso", "Pará", "Paraíba", "Pernambuco", "Piauí", "Paraná", "Rio de Janeiro", "Rio Grande do Norte", "Rondônia", "Roraima", "Rio Grande do Sul", "Santa Catarina", "Sergipe", "São Paulo", "Tocantins"]
+          },
+          "municipio": {
+            "enum": ["Fortaleza", "Rio de Janeiro", "Salvador", "Crateus", "Sao Paulo", "Campinas", "Belo Horizonte" ]
+          },
+           "bairro": {
+            "enum": ["Fortaleza", "Rio de Janeiro", "Salvador", "Crateus", "Sao Paulo", "Campinas", "Belo Horizonte" ]
+          },
+          "endereco": {
+            "type": "string",
+            "pattern": "^Rua [a-z]{2,30}, [0-9]{1,4}$"
+          },
+          "latitude": { 
+            "type": "number"
+          },
+          "longitude": { 
+            "type": "number"
+          },
+          "northBear": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "emissora": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 10,
+            "items": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "enum": [ "globo", "records", "band", "tv camara", "tv diario", "tv verde mares", "tv jangadeiro", "tv sao paulo" ]
+                },
+                "canal": { 
+                "type": "number",
+                "minimum": 0,
+                "maximum": 99
+                },
+                "classe": { 
+                  "enum": ["A", "B", "C", "D", "E"]
+                },
+                "graus": { 
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 360
+                },
+                "contorno": {
+                  "type": "integer", 
+                  "multipleOf": 1.0,
+                  "minimum": 40.0,
+                  "maximum": 70.0
+                },
+                "consideracoes": {
+                  "type": "string", 
+                  "minimum": 50,
+                  "maximum": 500
+                },
+                "nivel_sinal": {
+                  "type": "integer", 
+                  "multipleOf": 1.0,
+                  "minimum": 50.0,
+                  "maximum": 66.3
+                },
+                "sinal": {
+                  "enum": [ "sem", "fraco", "bom" ]
+                }
+              },
+              "required": ["nome", "canal", "classe", "graus", "contorno", "consideracoes", "nivel_sinal", "sinal"]
+            }
+          }
+        },
+        "required": ["id","uf", "estado","municipio","bairro", "endereco", "latitude", "longitude", "northBear", "emissora"]
+      }
+    }
+  },
+  "required": ["antenas"]
+}
