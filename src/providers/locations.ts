@@ -13,7 +13,7 @@ export class Locations {
  
     }
  
-    load(){
+    getTowers(){
  
         if(this.data){
             return Promise.resolve(this.data);

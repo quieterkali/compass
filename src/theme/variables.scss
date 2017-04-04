@@ -31,14 +31,19 @@ $colors: (
   dark:       #2c3e50,
   sem:        #E84038,
   fraco:      #f9ec2e,
-  bom:        #32C271
+  bom:        #32C271,
   boneco:     #12A3D0
 );
+
+$background-color: #372E66;
+
+$text-color: #ffffff;
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+$segment-button-ios-background-color-activated: #32C271;
 
 
 
@@ -46,6 +51,8 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$segment-button-md-background-color: #32C271;
+$segment-activated: #32C271;
 
 
 

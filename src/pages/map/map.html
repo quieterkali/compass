@@ -1,8 +1,15 @@
 <ion-header>
   <ion-toolbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-segment [(ngModel)]="options">
-      <button ion-button value="map" no-lines>MAP</button>
-      <button ion-button value="lista">LISTA</button>
+      <ion-segment-button value="map" class="segment">
+        MAP
+      </ion-segment-button>
+      <ion-segment-button value="lista" class="segment">
+        LISTA
+      </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
   <ion-navbar color="primary">

@@ -16,32 +16,32 @@ export class MapPage {
         
     }
  
-    ionViewDidLoad(){
+    // ionViewDidLoad(){
 
-        //this.maps.evaluateDistance();
+    //     //this.maps.evaluateDistance();
  
-        this.platform.ready().then(() => {
+    //     this.platform.ready().then(() => {
  
-            let mapLoaded = this.maps.init(this.mapElement.nativeElement, this.pleaseConnect.nativeElement);
-            let locationsLoaded = this.locations.load();
+    //         let mapLoaded = this.maps.init(this.mapElement.nativeElement, this.pleaseConnect.nativeElement);
+    //         let locationsLoaded = this.locations.load();
  
-            Promise.all([
-                mapLoaded,
-                locationsLoaded
-            ]).then((result) => {
+    //         Promise.all([
+    //             mapLoaded,
+    //             locationsLoaded
+    //         ]).then((result) => {
 
-                let locations = result[1];
-                //this.maps.evaluateDistance();
-                this.maps.addMarkersToMap(locations);
+    //             let locations = result[1];
+    //             //this.maps.evaluateDistance();
+    //             this.maps.addMarkersToMap(locations);
 
-                // for(let location of locations){
-                //     this.maps.addMarker(location.latitude, location.longitude);
-                // }
+    //             // for(let location of locations){
+    //             //     this.maps.addMarker(location.latitude, location.longitude);
+    //             // }
  
-            });
+    //         });
  
-        });
+    //     });
  
-    }
+    // }
  
 }

@@ -1,6 +1,43 @@
 page-home {
-    #map {
-        height: 100%;
-        width: 100%;
+
+    .header-footer {
+        color: white !important;
     }
+
+    // .segment {
+    //     border: 1px !important;
+    //     border-color:red !important;
+    // }
+
+    .segment-activated{
+        background-color: #32C271 !important;
+    }
+ 
+  #please-connect {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+ 
+  #please-connect p {
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      font-size: 1.6em;
+      top: 30%;
+  }
+ 
+  #map {
+      width: 100%;
+      height: 80%;
+  }
+
+  .m-10 {
+      margin-top: 10px;
+  }
+ 
 }

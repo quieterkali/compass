@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 import { Geolocation } from 'ionic-native';
 import { Locations } from '../../providers/locations';
 import { AntenaDetailsPage } from '../antena-details/antena-details';
@@ -11,14 +11,30 @@ declare const google;
   templateUrl: 'list.html'
 })
 export class ListPage {
+
+  towers: any [];
  
-  constructor(private navCtrl: NavController, private locations: Locations, private maps: GoogleMaps) {
-    console.log(this.locations.data);
+  constructor(private navCtrl: NavController, 
+              private locations: Locations, 
+              private maps: GoogleMaps,
+              private loadingCtrl: LoadingController) {}
+
+  presentationLoading(){
+    let loader = this.loadingCtrl.create({
+        content: "Carregando",
+        spinner: 'dots'
+    });
+
+    loader.present().then(() => {
+      this.locations.getTowers().then(data => {
+        this.towers = data;
+        loader.dismiss();
+      });
+    })
   }
  
   ionViewDidLoad() {
-    console.log('Hello ListPage Page');
-    this.getDistance();
+    this.presentationLoading();
   }
 
   getDistance(){
