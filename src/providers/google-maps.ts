@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Connectivity } from './connectivity';
 import { Geolocation } from 'ionic-native';
+import { ModalController } from 'ionic-angular';
+import { TowerModalPage } from "../pages/tower-modal/tower-modal";
+
  
 declare const google;
  
@@ -13,18 +16,19 @@ export class GoogleMaps {
   mapInitialised: boolean = false;
   mapLoaded: any;
   mapLoadedObserver: any;
-  markers: any = [];
+  // markers: any = [];
   apiKey: string = "AIzaSyA7grETiN_b4gVENDdoAa0b0QzNcogwmwM";
   bounds: any;
   service: any;
   currentPosition: any;
  
-  constructor(public connectivityService: Connectivity) {
+  constructor(public connectivityService: Connectivity,
+              private modalCtrl: ModalController) {
  
   }
  
   init(mapElement: any, pleaseConnect: any): Promise<any> {
- 
+    console.log(this.modalCtrl)
     this.mapElement = mapElement;
     this.pleaseConnect = pleaseConnect;
     return this.loadGoogleMaps();
@@ -92,9 +96,7 @@ export class GoogleMaps {
         this.currentPosition = position;
 
         this.bounds = new google.maps.LatLngBounds();
- 
-        //let latLng = new google.maps.LatLng(40.713744, -74.009056);
-        
+
         console.log(position);
 
         let mapOptions = {
@@ -171,23 +173,23 @@ export class GoogleMaps {
  
   }
 
-  addMarkersToMap(locations: any []){
+  addMarkersToMap(towersLoaded: any []){
      
-     for(let location of locations){
-        this.addMarker(location);
+     for(let tower of towersLoaded){
+        this.addMarker(tower);
       }
       this.map.fitBounds(this.bounds);
   }
  
-  addMarker(location: any): void {
+  addMarker(tower: any): void {
 
-    let antenaDescription = '<div>'+location.title+'</div>';
+    let towerDescription = '<div style="background-color: #372E66"><div style="color:black">Endereço: '+tower.endereco+'</div></br><div style="color:black">Baitto: '+tower.bairro+'</div></br><div style="color:black">Municipio: '+tower.municipio+'</div></br><div style="color:black">Latitude: '+tower.latitude+'</div></br><div style="color:black">Longitude: '+tower.longitude+'</div></br></div>';
 
     let infowindow = new google.maps.InfoWindow({
-      content: antenaDescription
+      content: towerDescription
     });
  
-    let latLng = new google.maps.LatLng(location.latitude, location.longitude);
+    let latLng = new google.maps.LatLng(tower.latitude, tower.longitude);
  
     let marker = new google.maps.Marker({
       map: this.map,
@@ -196,17 +198,18 @@ export class GoogleMaps {
       icon: 'assets/icon/antena_green.png'
     });
 
-    marker.addListener('click', function(){
-      infowindow.open(this.map, marker);
+    marker.addListener('click', () => {
+      //infowindow.open(this.map, marker);
+        let pageDetails = this.modalCtrl.create(TowerModalPage, {tower: tower});
+        pageDetails.present();
     })
 
     this.bounds.extend(latLng);
-    this.markers.push(marker);  
+    // this.markers.push(marker);  
   }
 
   evaluateDistance(latLng: any){
     this.service = new google.maps.DistanceMatrixService();
-    //let latLng = new google.maps.LatLng(this.currentPosition.coords.latitude, this.currentPosition.coords.longitude);
     this.service.getDistanceMatrix({
         origins: [latLng],
         destinations: ['rio de janeiro'],

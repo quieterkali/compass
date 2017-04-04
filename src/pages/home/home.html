@@ -3,11 +3,11 @@
     <button ion-button menuToggle icon-only>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-segment [(ngModel)]="options" class="segment">
-      <ion-segment-button value="map" class="header-footer segment-activated">
+    <ion-segment [(ngModel)]="segment" class="segment">
+      <ion-segment-button (click)="switchMap()" value="map" class="header-footer segment-activated">
         MAP
       </ion-segment-button>
-      <ion-segment-button (click)="goToList()" value="lista" class="header-footer">
+      <ion-segment-button (click)="switchList()" value="lista" class="header-footer">
         LISTA
       </ion-segment-button>
     </ion-segment>
@@ -20,19 +20,22 @@
 </ion-header>
  
 <ion-content>
- 
-  <div #pleaseConnect id="please-connect">
-    <p>Please connect to the Internet...</p>
+  <div class="map-wrapper">
+    <div [hidden]="mapBool" #map id="map"></div>
+    <div #pleaseConnect id="please-connect">
+      <p>Please connect to the Internet...</p>
+    </div>
+    <ion-row class="m-10">
+      <ion-col text-center>MINHA LOCALIZAÇÃO</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-75 text-center style="height:15px;line-height: 15px;">Rua Teresa Cristina, 1729A</ion-col>
+      <ion-col width-25><img src="assets/icon/alvo.svg" style="height:15px;" alt="alvo"></ion-col>
+    </ion-row>
   </div>
- 
-  <div #map id="map"></div>
-  <ion-row class="m-10">
-    <ion-col text-center>MINHA LOCALIZAÇÃO</ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col width-75 text-center style="height:15px;line-height: 15px;">Rua Teresa Cristina, 1729A</ion-col>
-    <ion-col width-25><img src="assets/icon/alvo.svg" style="height:15px;" alt="alvo"></ion-col>
-  </ion-row>
+  <div [hidden]="listBool">
+
+  </div>
 </ion-content>
 
 <ion-footer class="header-footer">
@@ -41,7 +44,7 @@
       <ion-col text-center>LEGENDA</ion-col>
     </ion-row>
     <ion-row>
-        <ion-col width-33 text-center><img src="assets/icon/botao-vermelho.svg" width="15px" height="15px" /></ion-col>
+        <ion-col width-33 text-center><img src="assets/icon/botao-amarelo.svg" width="15px" height="15px" /></ion-col>
         <ion-col width-33 text-center><img src="assets/icon/botao-amarelho.svg" width="15px" height="15px" /></ion-col>
         <ion-col width-33 text-center><img src="assets/icon/botao-verde.svg" width="15px" height="15px" /></ion-col>
       </ion-row>

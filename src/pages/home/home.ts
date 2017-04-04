@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Locations } from '../../providers/locations';
+import { Towers } from '../../providers/towers';
 import { GoogleMaps } from '../../providers/google-maps';
 import { NavController, Platform, LoadingController } from 'ionic-angular';
 
@@ -14,16 +14,31 @@ export class HomePage {
     @ViewChild('map') mapElement: ElementRef;
     @ViewChild('pleaseConnect') pleaseConnect: ElementRef;
     towers: any [];
+    segment: string = "map";
+    mapBool: Boolean = false;
+    listBool: Boolean = true;
  
     constructor(private navCtrl: NavController, 
                 private maps: GoogleMaps, private platform: Platform, 
-                private locations: Locations,
+                private towersProvider: Towers,
                 private loadingCtrl: LoadingController) {
         
     }
 
-    presentationLoading(){
+    switchMap(){
+      this.listBool = true;
+      this.mapBool = false;
+      console.log(this.listBool)
+      console.log(this.mapBool)
+    }
+    switchList(){
+      this.listBool = false;
+      this.mapBool = true;
+      console.log(this.listBool)
+      console.log(this.mapBool)
+    }
 
+    mapLoading(){
       let loader = this.loadingCtrl.create({
         content: "Carregando",
         spinner: 'dots'
@@ -31,32 +46,22 @@ export class HomePage {
 
       loader.present().then(() => {
         let mapLoaded = this.maps.init(this.mapElement.nativeElement, this.pleaseConnect.nativeElement);
-        let locationsLoaded = this.locations.getTowers();
+        let towersLoaded = this.towersProvider.getTowers();
 
         Promise.all([
             mapLoaded,
-            locationsLoaded
+            towersLoaded
         ]).then((result) => {
             this.towers = result[1];
-            let locations = result[1];
-            this.maps.addMarkersToMap(locations);
+            this.maps.addMarkersToMap(this.towers);
             loader.dismiss();
         });
       })
-  }
+    }
 
     ionViewDidLoad(){
-
-
-        //this.maps.evaluateDistance();
- 
-        this.platform.ready().then(() => {
-          this.presentationLoading();
-        });
+      this.platform.ready().then(() => {
+        this.mapLoading();
+      });
     }
-
-    goToList(){
-        this.navCtrl.push(ListPage);
-    }
- 
 }
