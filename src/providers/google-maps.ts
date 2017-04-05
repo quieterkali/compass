@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Connectivity } from './connectivity';
 import { Geolocation } from 'ionic-native';
-import { ModalController } from 'ionic-angular';
-import { TowerModalPage } from "../pages/tower-modal/tower-modal";
+import { Http } from '@angular/http';
 
  
 declare const google;
@@ -16,21 +15,19 @@ export class GoogleMaps {
   mapInitialised: boolean = false;
   mapLoaded: any;
   mapLoadedObserver: any;
-  // markers: any = [];
   apiKey: string = "AIzaSyA7grETiN_b4gVENDdoAa0b0QzNcogwmwM";
   bounds: any;
-  service: any;
-  currentPosition: any;
+  lat: any;
+  lng: any;
  
-  constructor(public connectivityService: Connectivity,
-              private modalCtrl: ModalController) {
+  constructor(public connectivityService: Connectivity, private http: Http) {
  
   }
  
   init(mapElement: any, pleaseConnect: any): Promise<any> {
-    console.log(this.modalCtrl)
     this.mapElement = mapElement;
     this.pleaseConnect = pleaseConnect;
+    // this.getCurrentLocation();
     return this.loadGoogleMaps();
   }
  
@@ -55,9 +52,9 @@ export class GoogleMaps {
           script.id = "googleMaps";
  
           if(this.apiKey){
-            script.src = 'http://maps.google.com/maps/api/js?key=' + this.apiKey + '&callback=mapInit';
+            script.src = 'https://maps.google.com/maps/api/js?key=' + this.apiKey + '&callback=mapInit';
           } else {
-            script.src = 'http://maps.google.com/maps/api/js?callback=mapInit';       
+            script.src = 'https://maps.google.com/maps/api/js?callback=mapInit';       
           }
  
           document.body.appendChild(script);  
@@ -93,11 +90,7 @@ export class GoogleMaps {
         // UNCOMMENT FOR NORMAL USE
         let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
-        this.currentPosition = position;
-
         this.bounds = new google.maps.LatLngBounds();
-
-        console.log(position);
 
         let mapOptions = {
           center: latLng,
@@ -113,9 +106,7 @@ export class GoogleMaps {
           icon: 'assets/icon/technician.png'
         });
 
-        this.bounds.extend(latLng)
-
-        this
+        this.bounds.extend(latLng);
 
         resolve(true);
  
@@ -183,7 +174,7 @@ export class GoogleMaps {
  
   addMarker(tower: any): void {
 
-    let towerDescription = '<div style="background-color: #372E66"><div style="color:black">Endereço: '+tower.endereco+'</div></br><div style="color:black">Baitto: '+tower.bairro+'</div></br><div style="color:black">Municipio: '+tower.municipio+'</div></br><div style="color:black">Latitude: '+tower.latitude+'</div></br><div style="color:black">Longitude: '+tower.longitude+'</div></br></div>';
+    let towerDescription = '<div><div style="color:black">Endereço: '+tower.endereco+'</br>Baitto: '+tower.bairro+'</br>Municipio: '+tower.municipio+'</br>Latitude: '+tower.latitude+'</br>Longitude: '+tower.longitude+'</div>';
 
     let infowindow = new google.maps.InfoWindow({
       content: towerDescription
@@ -198,27 +189,36 @@ export class GoogleMaps {
       icon: 'assets/icon/antena_green.png'
     });
 
-    marker.addListener('click', () => {
-      //infowindow.open(this.map, marker);
-        let pageDetails = this.modalCtrl.create(TowerModalPage, {tower: tower});
-        pageDetails.present();
+    marker.addListener('click', function () {
+        infowindow.open(this.map, marker);
     })
 
     this.bounds.extend(latLng);
-    // this.markers.push(marker);  
   }
 
-  evaluateDistance(latLng: any){
-    this.service = new google.maps.DistanceMatrixService();
-    this.service.getDistanceMatrix({
-        origins: [latLng],
-        destinations: ['rio de janeiro'],
-        travelMode: google.maps.TravelMode.DRIVING,
-        unitSystem: google.maps.UnitSystem.METRIC}, 
-        callback);
+  // getCurrentLocation(): Promise<any> {
+  //   return new Promise(resolve => {
+  //     Geolocation.getCurrentPosition().then(position => {
+  //       this.lat = position.coords.latitude;
+  //       this.lng = position.coords.longitude;
+  //       console.log(this.lat, this.lng)
+  //       this.getFormattedAddress(this.lat, this.lng);
+  //     })
+  //   })
+  // }
 
-    function callback(response, status) {
-      console.log(response);
-    }
+  getFormattedAddress(): Promise<any> {
+    return new Promise(resolve => {
+      Geolocation.getCurrentPosition().then(position => {
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+        //console.log(this.lat, this.lng);
+        this.http.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="+this.lat+","+this.lng+"&key="+this.apiKey)
+          .map(res => res.json()).subscribe(data => {
+            console.log(data);
+            resolve(data);
+        })
+      })
+    });
   }
 }

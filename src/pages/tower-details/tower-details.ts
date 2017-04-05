@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-tower-modal',
-  templateUrl: 'tower-modal.html'
+  selector: 'page-tower-details',
+  templateUrl: 'tower-details.html'
 })
-export class TowerModalPage {
+export class TowerDetailsPage {
 
   tower: any = {};
 
@@ -13,6 +13,7 @@ export class TowerModalPage {
 
   ionViewDidLoad() {
     this.tower = this.navParams.get('tower');
+    console.log(this.tower)
   }
 
 }

@@ -24,15 +24,15 @@ $font-path: "../assets/fonts";
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #372E66,
-  secondary:  #2ecc71,
-  danger:     #16a085,
-  light:      #f2f6f7,
-  dark:       #2c3e50,
-  sem:        #E84038,
-  fraco:      #f9ec2e,
-  bom:        #32C271,
-  boneco:     #12A3D0
+  primary:        #372E66,
+  secondary:      #00B0FF,
+  danger:         #16a085,
+  light:          #f2f6f7,
+  dark:           #2c3e50,
+  sem:            #E84038,
+  fraco:          #f9ec2e,
+  bom:            #32C271,
+  technician:     #12A3D0
 );
 
 $background-color: #372E66;
@@ -43,7 +43,7 @@ $text-color: #ffffff;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-$segment-button-ios-background-color-activated: #32C271;
+$segment-button-ios-background-color-activated: #00B0FF;
 
 
 
@@ -51,8 +51,8 @@ $segment-button-ios-background-color-activated: #32C271;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-$segment-button-md-background-color: #32C271;
-$segment-activated: #32C271;
+$segment-button-md-background-color: #00B0FF;
+$segment-activated: #00B0FF;
 
 
 

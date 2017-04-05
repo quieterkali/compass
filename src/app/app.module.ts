@@ -2,25 +2,20 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { MapPage } from '../pages/map/map';
-import { TowerModalPage } from '../pages/tower-modal/tower-modal';
-import { ListPage } from '../pages/list/list';
-import { AntenaDetailsPage } from '../pages/antena-details/antena-details';
-import { Locations } from '../providers/locations';
+import { TowerDetailsPage } from '../pages/tower-details/tower-details';
 import { Towers } from '../providers/towers';
 import { GoogleMaps } from '../providers/google-maps';
 import { Connectivity } from '../providers/connectivity';
 import { CompassPage } from '../pages/compass/compass';
+import { RecommendationsPage } from "../pages/recommendations/recommendations";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    MapPage,
-    ListPage,
-    AntenaDetailsPage,
     CompassPage,
-    TowerModalPage
+    TowerDetailsPage,
+    RecommendationsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,12 +24,10 @@ import { CompassPage } from '../pages/compass/compass';
   entryComponents: [
     MyApp,
     HomePage,
-    MapPage,
-    ListPage,
-    AntenaDetailsPage,
     CompassPage,
-    TowerModalPage
+    TowerDetailsPage,
+    RecommendationsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Locations, GoogleMaps, Connectivity, Towers]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, GoogleMaps, Connectivity, Towers]
 })
 export class AppModule {}

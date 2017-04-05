@@ -4,21 +4,15 @@ page-home {
         color: white !important;
     }
 
-    // .segment {
-    //     border: 1px !important;
-    //     border-color:red !important;
-    // }
 
     .segment-activated{
-        background-color: #32C271 !important;
+        background-color: #00B0FF !important;
     }
  
   #please-connect {
     position: absolute;
     background-color: #000;
     opacity: 0.5;
-    width: 100%;
-    height: 100%;
     z-index: 1;
   }
  
@@ -31,18 +25,49 @@ page-home {
       top: 30%;
   }
  
-  #map {
+  #map, #please-connect {
       width: 100%;
-      height: 80%;
+      height: calc(100% - 80px);
   }
+
+	.location-container {
+		width: 100%;
+		height: 80px;
+		overflow: hidden;
+	}
 
    .map-wrapper {
       width: 100%;
       height: 100%;
   }
 
-  .m-10 {
-      margin-top: 10px;
-  }
- 
+	.m-l {
+		margin-left: 10px !important;
+	}
+
+  ion-scroll { 
+    height: 350px;
+    white-space: nowrap;
+	}
+
+	.left-shadow {
+		-webkit-box-shadow: -5px 0 0 0 #00B0FF, 0 5px 5px 0 #000056;
+		box-shadow: -5px 0px 0px 0px #00B0FF, 0 5px 5px 0 #000056;
+	}
+
+	.btn {
+		margin-top:22px;
+	}
+
+	ion-icon {
+		font-size: 32px;
+		color: #0e9fcd;
+	}
+
+	.address-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 20px;
+	}
 }

@@ -20,21 +20,42 @@
 </ion-header>
  
 <ion-content>
-  <div class="map-wrapper">
-    <div [hidden]="mapBool" #map id="map"></div>
+  <div class="map-wrapper" [hidden]="mapBool">
+    <div #map id="map"></div>
     <div #pleaseConnect id="please-connect">
       <p>Please connect to the Internet...</p>
     </div>
-    <ion-row class="m-10">
-      <ion-col text-center>MINHA LOCALIZAÇÃO</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col width-75 text-center style="height:15px;line-height: 15px;">Rua Teresa Cristina, 1729A</ion-col>
-      <ion-col width-25><img src="assets/icon/alvo.svg" style="height:15px;" alt="alvo"></ion-col>
-    </ion-row>
+    <div class="location-container">
+      <div text-center>
+        <h6>MINHA LOCALIZAÇÃO</h6>
+      </div>
+      <div class="address-container">
+        <div>{{formattedAddress}}</div>
+        <div class="m-l">
+          <ion-icon name="ios-locate-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
   </div>
-  <div [hidden]="listBool">
-
+  <div [hidden]="listBool" padding>
+    <ion-list>
+      <ion-scroll scrollY="true">
+        <ion-item class="left-shadow" *ngFor="let tower of towers" (click)="goToTowerDetailsPage(tower)" no-lines margin-bottom>
+            <ion-avatar item-left>
+                <ion-icon name="pin"></ion-icon>
+            </ion-avatar>
+            <ion-avatar item-right>
+                <ion-icon name="pin"></ion-icon>
+            </ion-avatar>
+            <h2>Distância</h2>
+            <p>{{tower.distance}} km</p>
+        </ion-item>
+      </ion-scroll>
+    </ion-list>
+    <button ion-button color="secondary" class="btn" full icon-right>
+      CLIQUE AQUI E POSICIONE A ANTENA
+      <ion-icon name="locate"></ion-icon>
+    </button>
   </div>
 </ion-content>
 
@@ -49,9 +70,9 @@
         <ion-col width-33 text-center><img src="assets/icon/botao-verde.svg" width="15px" height="15px" /></ion-col>
       </ion-row>
     <ion-row>
-        <ion-col width-33 text-center>SEM SINAL</ion-col>
-        <ion-col width-33 text-center>SINAL FRACO</ion-col>
-        <ion-col width-33 text-center>SINAL BOM</ion-col>
+      <ion-col width-33 text-center>SEM SINAL</ion-col>
+      <ion-col width-33 text-center>SINAL FRACO</ion-col>
+      <ion-col width-33 text-center>SINAL BOM</ion-col>
     </ion-row>
   </ion-toolbar>
 </ion-footer>

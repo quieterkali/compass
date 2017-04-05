@@ -1,0 +1,29 @@
+page-tower-details {
+    .container{
+      min-height: 90%;
+    }
+
+    .left-shadow {
+		-webkit-box-shadow: -5px 0 0 0 #00B0FF, 0 5px 5px 0 #000056;
+		box-shadow: -5px 0px 0px 0px #00B0FF, 0 5px 5px 0 #000056;
+	}
+
+	ion-icon {
+		font-size: 32px;
+		color: #0e9fcd;
+	}
+
+	.item-detail {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin-left: 15px;
+		padding-top: 30px;
+  	padding-bottom: 30px;
+	}
+
+	.m-l {
+		margin-left: 20px;
+	}
+
+}
