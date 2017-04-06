@@ -8,6 +8,7 @@ import { GoogleMaps } from '../providers/google-maps';
 import { Connectivity } from '../providers/connectivity';
 import { CompassPage } from '../pages/compass/compass';
 import { RecommendationsPage } from "../pages/recommendations/recommendations";
+import { LoginPage } from "../pages/login/login";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RecommendationsPage } from "../pages/recommendations/recommendations";
     HomePage,
     CompassPage,
     TowerDetailsPage,
-    RecommendationsPage
+    RecommendationsPage,
+    LoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import { RecommendationsPage } from "../pages/recommendations/recommendations";
     HomePage,
     CompassPage,
     TowerDetailsPage,
-    RecommendationsPage
+    RecommendationsPage,
+    LoginPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, GoogleMaps, Connectivity, Towers]
 })

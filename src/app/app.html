@@ -1,15 +1,43 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
+    <ion-toolbar color="menu" icon-only text-center>
+      <ion-icon name="menu" style="color: white; font-size: 32px;"></ion-icon>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <ion-list-header>Navigate</ion-list-header>
-     <button ion-item menuClose >Home</button>
-     <button ion-item menuClose >Tournaments</button>
+  <ion-content style="background-color: #00B0E3">
+    <ion-list no-lines>
+     <button ion-item menuClose color="menu" (click)="goToLoginPage()">
+       <div text-center style="padding-top:60%">
+        <div text-center>
+          <ion-icon style="font-size:32px;" name="ios-settings-outline" text-center></ion-icon>
+        </div>
+        <div text-center>
+          <p style="font-size:12px">Técnico</p>
+        </div>
+       </div>
+     </button>
+     <button ion-item menuClose color="menu">
+       <div text-center style="padding-top:60%">
+        <div text-center>
+          <ion-icon style="font-size:32px;" name="ios-paper-outline" text-center></ion-icon>
+        </div>
+        <div text-center>
+          <p style="font-size:12px">Termos</p>
+          <p style="font-size:12px">de uso</p>
+        </div>
+       </div>
+     </button>
+     <button ion-item menuClose color="menu">
+       <div text-center style="padding-top:60%">
+        <div text-center>
+          <ion-icon style="font-size:32px" name="ios-power-outline" text-center></ion-icon>
+        </div>  
+        <div text-center>
+          <p style="font-size:12px">Sair</p>
+        </div>
+       </div>
+     </button>
     </ion-list>
   </ion-content>
 

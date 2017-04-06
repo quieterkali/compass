@@ -13,27 +13,21 @@ export class CompassPage {
   subscription: any;
   magneticHeading: any;
   currentHeading: any = 0;
+  formattedAddress:string;
+  tower: any = {};
 
-  // animations: [
-  //   trigger('rot', [
-  //     state('flipped', style({
-  //       transform: 'rotate(180deg)',
-  //       backgroundColor: '#f50e80'
-  //     })),
-  //     transition('* => flipped', animate('400ms ease'))
-  //   ])
-  // ]
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(private navCtrl: NavController, 
+              private navParams: NavParams) {
+    this.lock();
+    this.formattedAddress = this.navParams.get('formattedAddress')
+  }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CompassPage');
     this.initCompass();
   }
 
   // Get the device current compass heading
   initCompass(){
-    //this.div2 = document.getElementById("div2")[0];
     DeviceOrientation.getCurrentHeading().then(
       (data: DeviceOrientationCompassHeading) => {
         console.log(data);
@@ -51,24 +45,18 @@ export class CompassPage {
     
   }
 
-  getRotate(){
-    //this.lock();
+  getRotate() {
     let rotateValue = this.magneticHeading + this.currentHeading;
     this.compass.nativeElement.style.transform = 'rotate(-'+ rotateValue +'deg)';
     this.currentHeading = this.magneticHeading;
   }
 
-  // getRotate(){
-  //   //this.lock();
-  //   return 'rotate(-'+this.magneticHeading+'deg)';
-  // }
 
-  lock(){
+  lock() {
     window.screen.orientation.lock('portrait')
-    //setTimeout(ScreenOrientation.lockOrientation("portrait"),500);
   }
 
-  stopCompass(){
+  stopCompass() {
     // Stop watching heading change
     this.subscription.unsubscribe();
   }

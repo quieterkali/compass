@@ -78,7 +78,6 @@ export class GoogleMaps {
     this.mapInitialised = true;
     return new Promise((resolve) => {
       Geolocation.getCurrentPosition().then((position) => {
-        console.log("scriptID");
         // UNCOMMENT FOR NORMAL USE
         let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         this.bounds = new google.maps.LatLngBounds();
@@ -120,8 +119,6 @@ export class GoogleMaps {
  
     document.addEventListener('online', () => {
  
-      console.log("online");
- 
       setTimeout(() => {
         
         if(typeof google == "undefined" || typeof google.maps == "undefined"){
@@ -140,8 +137,6 @@ export class GoogleMaps {
     }, false);
  
     document.addEventListener('offline', () => {
- 
-      console.log("offline");
  
       this.disableMap();
  
@@ -181,26 +176,13 @@ export class GoogleMaps {
     this.bounds.extend(latLng);
   }
 
-  // getCurrentLocation(): Promise<any> {
-  //   return new Promise(resolve => {
-  //     Geolocation.getCurrentPosition().then(position => {
-  //       this.lat = position.coords.latitude;
-  //       this.lng = position.coords.longitude;
-  //       console.log(this.lat, this.lng)
-  //       this.getFormattedAddress(this.lat, this.lng);
-  //     })
-  //   })
-  // }
-
   getFormattedAddress(): Promise<any> {
     return new Promise(resolve => {
       Geolocation.getCurrentPosition().then(position => {
         this.lat = position.coords.latitude;
         this.lng = position.coords.longitude;
-        //console.log(this.lat, this.lng);
         this.http.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="+this.lat+","+this.lng+"&key="+this.apiKey)
           .map(res => res.json()).subscribe(data => {
-            console.log(data);
             resolve(data);
         })
       })

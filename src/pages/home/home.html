@@ -1,13 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
     <button ion-button menuToggle icon-only>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu" style="color: white; font-size: 32px;"></ion-icon>
     </button>
     <ion-segment [(ngModel)]="segment" class="segment">
-      <ion-segment-button (click)="switchMap()" value="map" class="header-footer segment-activated">
+      <ion-segment-button text-center (click)="switchMap()" value="map" class="header-footer segment-activated">
         MAP
       </ion-segment-button>
-      <ion-segment-button (click)="switchList()" value="lista" class="header-footer">
+      <ion-segment-button text-center (click)="switchList()" value="lista" class="header-footer">
         LISTA
       </ion-segment-button>
     </ion-segment>
@@ -52,7 +52,7 @@
         </ion-item>
       </ion-scroll>
     </ion-list>
-    <button ion-button color="secondary" class="btn" full icon-right>
+    <button ion-button (click)="goToCompass()" color="secondary" class="btn" full icon-right>
       CLIQUE AQUI E POSICIONE A ANTENA
       <ion-icon name="locate"></ion-icon>
     </button>

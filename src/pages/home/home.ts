@@ -4,6 +4,7 @@ import { NavController, Platform, LoadingController } from 'ionic-angular';
 import { Towers } from '../../providers/towers';
 import { GoogleMaps } from '../../providers/google-maps';
 import { TowerDetailsPage } from '../tower-details/tower-details';
+import { CompassPage } from "../compass/compass";
  
 @Component({
   selector: 'page-home',
@@ -53,18 +54,24 @@ export class HomePage {
             towersLoaded,
             formattedAddress
         ]).then((result) => {
-            this.towers = result[1];
+            this.towers = result[1].towers;
             let formattedAddress = result[2].results[0].address_components;
             this.formattedAddress = formattedAddress[1].long_name + " " + formattedAddress[0].long_name;
             this.maps.addMarkersToMap(this.towers);
             loader.dismiss();
+            //throw Error("");
+        }).catch((error: Error) => {
+          console.log(error.message);
         });
       })
     }
 
     goToTowerDetailsPage(tower){
-      console.log(tower)
       this.navCtrl.push(TowerDetailsPage, {tower: tower})
+    }
+
+    goToCompass(){
+      this.navCtrl.push(CompassPage, {formattedAddress: this.formattedAddress});
     }
 
     ionViewDidLoad(){

@@ -7,10 +7,13 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class RecommendationsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  recommendations: string;
+
+  constructor(private navCtrl: NavController, private navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecommendationsPage');
+    this.recommendations = this.navParams.get('recommendations');
   }
 
 }

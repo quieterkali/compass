@@ -1,0 +1,121 @@
+{
+  "towers": [
+    {
+      "id": 42957485,
+      "uf": "AC",
+      "estado": "Minas Gerais",
+      "municipio": "Rio de Janeiro",
+      "bairro": "Fortaleza",
+      "endereco": "Rua nwgvmeftczdhmhsmoohl, 1816",
+      "latitude": -3.738998,
+      "longitude": -38.540111,
+      "distance": 30,
+      "northBear": 78,
+      "sinal": "bom"
+    },
+    {
+      "id": 82221422,
+      "uf": "RO",
+      "estado": "Roraima",
+      "municipio": "Fortaleza",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua iftbdnfbqzrupbh, 3",
+      "latitude": -3.739626,
+      "longitude": -38.540916,
+      "distance": 70,
+      "northBear": 14,
+      "sinal": "sem"
+    },
+    {
+      "id": 76009034,
+      "uf": "RJ",
+      "estado": "Bahia",
+      "municipio": "Fortaleza",
+      "bairro": "Fortaleza",
+      "endereco": "Rua rmteobzoxxjrzddhz, 93",
+      "latitude": -3.761043,
+      "longitude": -38.539620,
+      "distance": 50,
+      "northBear": 288,
+      "sinal": "fraco"
+    },
+    {
+      "id": 32014264,
+      "uf": "MG",
+      "estado": "Amazonas",
+      "municipio": "Salvador",
+      "bairro": "Fortaleza",
+      "endereco": "Rua xyxpdqzeiodaxn, 5921",
+      "latitude": -3.770052,
+      "longitude": -38.542370,
+      "distance": 17,
+      "northBear": 359,
+      "sinal": "bom"
+    },
+    {
+      "id": 90462091,
+      "uf": "MG",
+      "estado": "Amazonas",
+      "municipio": "Belo Horizonte",
+      "bairro": "Rio de Janeiro",
+      "endereco": "Rua cyjeugcpnkefcceohiubs, 5",
+      "latitude": -3.741262,
+      "longitude": -38.539389,
+      "distance": 23,
+      "northBear": 43,
+      "sinal": "bom"
+    },
+    {
+      "id": 53329958,
+      "uf": "PA",
+      "estado": "Rio Grande do Norte",
+      "municipio": "Crateus",
+      "bairro": "Fortaleza",
+      "endereco": "Rua piaanhue, 2",
+      "latitude": -3.744260,
+      "longitude": -38.535825,
+      "distance": 6,
+      "northBear": 184,
+      "sinal": "bom"
+    },
+    {
+      "id": 71627452,
+      "uf": "BA",
+      "estado": "Acre",
+      "municipio": "Crateus",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua kmhfxjpcwvcggdxzavwlzvnostor, 71",
+      "latitude": -3.755883,
+      "longitude": -38.539338,
+      "distance": 67,
+      "northBear": 270,
+      "sinal": "fraco"
+    },
+    {
+      "id": 89180379,
+      "uf": "RJ",
+      "estado": "Amapá",
+      "municipio": "Sao Paulo",
+      "bairro": "Sao Paulo",
+      "endereco": "Rua qnskttsyunxrqzrjwzlzgesuaghus, 058",
+      "latitude": -3.746939,
+      "longitude": -38.532642,
+      "distance": 25,
+      "northBear": 11,
+      "sinal":"bom"
+    },
+    {
+      "id": 19639123,
+      "uf": "BA",
+      "estado": "Rio de Janeiro",
+      "municipio": "Campinas",
+      "bairro": "Rio de Janeiro",
+      "endereco": "Rua vjmntofgqurkndsohbpysrrr, 194",
+      "latitude": -3.775916,
+      "longitude": -38.562151,
+      "distance": 70,
+      "northBear": 248,
+      "sinal":"sem"
+    }
+  ]
+}

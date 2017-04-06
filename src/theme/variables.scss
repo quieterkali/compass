@@ -12,7 +12,7 @@ $font-path: "../assets/fonts";
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 
-
+$text-input-md-show-valid-highlight: yellow;
 
 
 // Named Color Variables
@@ -25,14 +25,15 @@ $font-path: "../assets/fonts";
 
 $colors: (
   primary:        #372E66,
-  secondary:      #00B0FF,
+  secondary:      #00B0E3,
   danger:         #16a085,
   light:          #f2f6f7,
   dark:           #2c3e50,
   sem:            #E84038,
   fraco:          #f9ec2e,
   bom:            #32C271,
-  technician:     #12A3D0
+  technician:     #12A3D0,
+  menu:           #00B0E3
 );
 
 $background-color: #372E66;

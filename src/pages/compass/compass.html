@@ -9,17 +9,54 @@
 
 
 <ion-content padding>
+  <div style="width: 100%; height: 150px">
+    <ion-row>
+      <ion-col>ANTENAS ENCONTRADAS</ion-col>
+    </ion-row>
+    <ion-list>
+      <ion-item no-lines>
+        <ion-avatar item-left>
+            <ion-icon name="pin"></ion-icon>
+        </ion-avatar>
+        <ion-avatar item-right>
+            <ion-icon name="pin"></ion-icon>
+        </ion-avatar>
+        <h2>Distância</h2>
+        <p>{{tower.distance}} km</p>
+      </ion-item>
+    </ion-list>
+  </div>
   <div id="compass-container">
     <div #compass id="compass"></div>
-    <!--<div #compass id="compass" [@rot]="rotate"></div>-->
     <div id="compass-arrow"></div>
   </div>
-  <div>
-    <ion-list>
-      <ion-item>MagneticHeading: {{magneticHeading}}</ion-item>
-    </ion-list>
-    <button ion-button full (click)="initCompass()" color="secondary">Start Compass</button>
-    <button ion-button full (click)="stopCompass()" color="secondary">Stop compass</button>
-    <button ion-button full (click)="lock()" color="secondary">Lock Screen</button>
+  <div class="location-container">
+    <div text-center>
+      <h6>MINHA LOCALIZAÇÃO</h6>
+    </div>
+    <div class="address-container">
+      <div>{{formattedAddress}}</div>
+      <div class="m-l">
+        <ion-icon name="ios-locate-outline"></ion-icon>
+      </div>
+    </div>
   </div>
 </ion-content>
+
+<ion-footer class="header-footer">
+  <ion-toolbar color="primary">
+    <ion-row>
+      <ion-col text-center>LEGENDA</ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col width-33 text-center><img src="assets/icon/botao-amarelo.svg" width="15px" height="15px" /></ion-col>
+        <ion-col width-33 text-center><img src="assets/icon/botao-amarelho.svg" width="15px" height="15px" /></ion-col>
+        <ion-col width-33 text-center><img src="assets/icon/botao-verde.svg" width="15px" height="15px" /></ion-col>
+      </ion-row>
+    <ion-row>
+      <ion-col width-33 text-center>SEM SINAL</ion-col>
+      <ion-col width-33 text-center>SINAL FRACO</ion-col>
+      <ion-col width-33 text-center>SINAL BOM</ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
