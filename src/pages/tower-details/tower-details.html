@@ -10,10 +10,61 @@
 
 <ion-content padding>
   <div class="container left-shadow">
-    <div item-right class="item-detail">
+    <!--<div item-right class="item-detail">
       <ion-icon name="ios-locate-outline"></ion-icon>
-      <h6 class="m-l">Distancia</h6>
-      <h5 class="m-l">{{tower.distance}} km</h5>
-    </div>
+      <h6 class="m-l"></h6>
+      <h4 class="m-l">{{tower.distance}}</h4>
+      <h6 class="m-l">km</h6>
+    </div>-->
+    <ion-grid>
+      <ion-row>
+        <ion-col width-10>
+          <ion-icon name="ios-locate-outline"></ion-icon>
+        </ion-col>
+        <ion-col width-90>
+          <p> <span style="font-size: 15px">Distancia</span> <span style="font-size: 20px">{{tower.distance}}</span> km</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-10>
+          <ion-icon name="ios-locate-outline"></ion-icon>
+        </ion-col>
+        <ion-col width-90>
+          <p>{{tower.endereco}}</p>
+          <p>{{tower.bairro}}</p>
+          <p>{{tower.municipio}} / {{tower.uf}}</p>
+          <p>LA: {{tower.latitude}}</p>
+          <p>LT: {{tower.longitude}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-10>
+          <ion-icon name="ios-locate-outline"></ion-icon>
+        </ion-col>
+        <ion-col width-90>
+          <ion-list>
+            <ion-scroll scrollY="true">
+              <ion-item class="left-shadow" *ngFor="let emissora of tower.emissora" no-lines margin-bottom>
+                  <ion-avatar item-left>
+                      <ion-icon name="pin"></ion-icon>
+                  </ion-avatar>
+                  <ion-avatar item-right>
+                      <ion-icon name="info"></ion-icon>
+                  </ion-avatar>
+                  <h2>{{emissora.nome}}</h2>
+              </ion-item>
+            </ion-scroll>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+  <button ion-button color="secondary" class="btn" full icon-right>
+    RECOMMENDAÇÕES
+    <ion-icon name="locate"></ion-icon>
+  </button>
 </ion-content>

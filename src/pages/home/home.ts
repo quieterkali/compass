@@ -1,6 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NavController, Platform, LoadingController } from 'ionic-angular';
-import { Geolocation } from 'ionic-native';
 
 import { Towers } from '../../providers/towers';
 import { GoogleMaps } from '../../providers/google-maps';
@@ -28,17 +27,6 @@ export class HomePage {
                 private loadingCtrl: LoadingController) {
         
     }
-
-    // getCurrentLocationFormattedAddress(): Promise<any>{
-    //   return new Promise(resolve => {
-    //     Geolocation.getCurrentPosition().then(position => {
-    //       this.lat = position.coords.latitude;
-    //       this.lng = position.coords.longitude;
-    //       //console.log(this.lat, this.lng)
-    //       // this.maps.getFormattedAddress(this.lat, this.lng);
-    //     });
-    //   });
-    // }
 
     switchMap(){
       this.listBool = true;

@@ -40,17 +40,15 @@ export class GoogleMaps {
         this.disableMap();
         if(this.connectivityService.isOnline()){
           window['mapInit'] = () => {
- 
             this.initMap().then(() => {
               resolve(true);
             });
- 
             this.enableMap();
           }
  
           let script = document.createElement("script");
           script.id = "googleMaps";
- 
+          
           if(this.apiKey){
             script.src = 'https://maps.google.com/maps/api/js?key=' + this.apiKey + '&callback=mapInit';
           } else {
@@ -60,58 +58,45 @@ export class GoogleMaps {
           document.body.appendChild(script);  
  
         } 
-      }
-      else {
-        
+      }else {
         if(this.connectivityService.isOnline()){
           this.initMap();
           this.enableMap();
-        }
-        else {
+        }else {
           this.disableMap();
         }
  
       }
  
       this.addConnectivityListeners();
- 
+      
     });
  
   }
  
   initMap(): Promise<any> {
- 
     this.mapInitialised = true;
- 
     return new Promise((resolve) => {
- 
       Geolocation.getCurrentPosition().then((position) => {
- 
+        console.log("scriptID");
         // UNCOMMENT FOR NORMAL USE
         let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
         this.bounds = new google.maps.LatLngBounds();
-
         let mapOptions = {
           center: latLng,
           zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           disableDefaultUI: true
         }
- 
         this.map = new google.maps.Map(this.mapElement, mapOptions);
         new google.maps.Marker({
           position: latLng,
           map: this.map,
           icon: 'assets/icon/technician.png'
         });
-
         this.bounds.extend(latLng);
-
         resolve(true);
- 
       });
- 
     });
  
   }
