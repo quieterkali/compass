@@ -6,12 +6,14 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-row style="height: 40%; height: 40%">
-    <ion-col text-center margin-top>
-      <img src="assets/icon/antena_green.png" />
-    </ion-col>
-  </ion-row>
-  <div>
+  <div class="logo-container">
+    <ion-row>
+      <ion-col text-center>
+        <img src="assets/icon/antena_green.png" />
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="login-data">
    <ion-list no-lines>
       <ion-item>
         <ion-label stacked>Email:</ion-label>
@@ -22,6 +24,6 @@
         <ion-input type="password"></ion-input>
       </ion-item>
     </ion-list>
+    <button full outline style="border-width:1px; border-color:#00AEC7; border-radius:5px; color:white" ion-button class="login-button">Login</button>
   </div>
-  <button full outline style="border-width:1px; border-color:#00AEC7; border-radius:5px; color:white" ion-button class="login-button">Login</button>
 </ion-content>

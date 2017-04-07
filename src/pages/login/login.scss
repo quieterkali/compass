@@ -1,9 +1,26 @@
 page-login {
-    ion-label {
-        color: white !important;
-    }
+	ion-label {
+			color: white !important;
+			font-size: 16px !important;
+	}
 
-    .list-md .item-input:last-child {
-      border-bottom: none !important;
-    }
+	.list-md .item-input:last-child {
+		border-bottom: none !important;
+	}
+
+	@media screen and ( max-height: 600px ){
+    background: blue !important;
+	}
+
+  .logo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: calc(100% - 280px);
+    width: 100%;
+	}
+
+	.login-data {
+		height: 280px;
+	}
 }
